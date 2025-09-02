@@ -3,13 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Airbnb Clone</title>
+    <title>home away from home</title>
     <!-- remix icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <!-- swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"
+    ></script>
+    <!-- scroll reveal-->
+    <script defer src="/src/js/scrollreveal.min.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="/src/output.css" />
+    <!-- main js -->
+    <script defer src="/src/js/script.js"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <body class="bg-accent-2/20">
+    <!-- site wrapper -->
+    <div class="w-full max-w-[1440px] mx-auto bg-page">
+      <!-- header -->
+      <header class=" py-10 px-4">
+        <div class="container mx-auto">
+          <div class="flex items-center justify-between">
+            <!-- logo -->
+            <a href="">
+              <img
+                src="/img/logo.svg"
+                alt="home away from home logo"
+
+              />
+            </a>
+
+                <!-- nav desktop -->
+               <nav class="hidden xl:flex items-center gap-8 text-sm font-medium text-accent-2">
+                <a href="Home"></a>
+                <a href="About"></a>
+                <a href="Service"></a>
+                <a href="Projects"></a>
+                <a href="FeedBack"></a>
+               </nav>
+
+            <!-- btn & nav mobile trigger -->
+            <div>
+              <!--  btn -->
+              <button
+                class="hidden xl:block btn btn-sm btn-accent-2"
+
+              >
+                Contact Us
+              </button>
+              <!-- nav mobile trigger icon-->
+              <button class="cursor-pointer xl:hidden" id=" nav-trigger">
+                <i class="ri-menu-4-line text-3xl"></i>
+              </button>
+              <!-- nav mobile -->
+              <nav
+                class="fixed right-0 top-0 bottom-0 h-full z-50 w-[300px] bg-white shadow-2xl xl:hidden transform translate-x-full transition-transform-duration-500 ease-in-out flex flex-col items-center justify-center gap-24 pt-12"
+                id="nav-mobile"
+              >
+                <!-- logo -->
+                <a href="">
+                  <img src="/img/logo.svg" alt="" />
+                </a>
+                <!-- menu -->
+                <ul class="w-full flex flex-col items-center gap-12 text-md">
+                  <!-- nav mobile close -->
+                   <li class="absolute left-6 top-6 bg-accent-2 w-8 h-8 rounded-full flex items-center justify-center cursor-pointer text-white"
+                   id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                   </li>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Projects</a></li>
+                  <li><a href="">FeedBack/a></li>
+                </ul>
+                <!-- contact btn -->
+                <button class="btn btn-sm btn-accent-2">Contact Us</button>
+              </nav>
+
+            </div>
+          </div>
+        </div>
+      </header>
+
+<!-- hero -->
+ <section class="bg-yellow-100 relative py-24 xl:py-0 xl:h-[800px] flex items-center"
+  >
+  <div class="bg-accent-1 w-full xl:w-3/4 h-full absolute top-0 left-0 z-10 xl:rounded-tr-[500px]"></div>
+  <!-- text & features -->
+   <div class="relative z-40">text and features img</div>
+ </section>
+
+      <!-- temp div -->
+      <div classs="h-[3000px]"></div>
+    </div>
   </body>
 </html>
