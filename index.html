@@ -19,10 +19,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"
     ></script>
     <!-- scroll reveal-->
-    <script
-    defer
-    src="/src/js/scrollreveal.min.js"
-    ></script>
+    <script defer src="/src/js/scrollreveal.min.js"></script>
     <!-- main css -->
     <link rel="stylesheet" href="/src/output.css" />
     <!-- main js -->
@@ -32,38 +29,31 @@
     <!-- site wrapper -->
     <div class="w-full max-w-[1440px] mx-auto bg-page">
       <!-- header -->
-      <header class=" py-10 px-4">
+      <header class="py-10 px-4">
         <div class="container mx-auto">
           <div class="flex items-center justify-between">
             <!-- logo -->
             <a href="">
-              <img
-                src="/img/logo.svg"
-                alt="home away from home logo"
-
-              />
+              <img src="/img/logo.svg" alt="home away from home logo" />
             </a>
 
-                <!-- nav desktop -->
-               <nav class="hidden xl:flex items-center gap-8 text-sm font-medium text-accent-2">
-                <a href="Home"></a>
-                <a href="About"></a>
-                <a href="Service"></a>
-                <a href="Projects"></a>
-                <a href="FeedBack"></a>
-               </nav>
-
+            <nav
+              class="hidden xl:flex items-center gap-8 text-sm font-medium text-accent-2"
+            >
+              <a href="">Home</a>
+              <a href="">About</a>
+              <a href="">Services</a>
+              <a href="">Projects</a>
+              <a href="">Feedback</a>
+            </nav>
             <!-- btn & nav mobile trigger -->
             <div>
               <!--  btn -->
-              <button
-                class="hidden xl:block btn btn-sm btn-accent-2"
-
-              >
+              <button class="hidden xl:block btn btn-sm btn-accent-2">
                 Contact Us
               </button>
-              <!-- nav mobile trigger icon-->
-              <button class="cursor-pointer xl:hidden" id=" nav-trigger">
+              <!-- nav trigger -->
+              <button class="cursor-pointer xl:hidden" id="nav-trigger">
                 <i class="ri-menu-4-line text-3xl"></i>
               </button>
               <!-- nav mobile -->
@@ -78,72 +68,92 @@
                 <!-- menu -->
                 <ul class="w-full flex flex-col items-center gap-12 text-md">
                   <!-- nav mobile close -->
-                   <li class="absolute left-6 top-6 bg-accent-2 w-8 h-8 rounded-full flex items-center justify-center cursor-pointer text-white"
-                   id="nav-close">
+                  <li
+                    class="absolute left-6 top-6 bg-accent-2 w-8 h-8 rounded-full flex items-center justify-center cursor-pointer text-white"
+                    id="nav-close"
+                  >
                     <i class="ri-close-circle-fill"></i>
-                   </li>
+                  </li>
                   <li><a href="">Home</a></li>
                   <li><a href="">About</a></li>
                   <li><a href="">Services</a></li>
                   <li><a href="">Projects</a></li>
-                  <li><a href="">FeedBack/a></li>
+                  <li><a href="">Feedback</a></li>
                 </ul>
                 <!-- contact btn -->
                 <button class="btn btn-sm btn-accent-2">Contact Us</button>
               </nav>
-
             </div>
           </div>
         </div>
       </header>
 
-<!-- hero -->
- <section class="hero relative py-24 xl:py-0 xl:h-[800px] flex items-center"
-  >
-  <div class="bg-accent-1 w-full xl:w-3/4 h-full absolute top-0 left-0 z-10 xl:rounded-tr-[500px]"></div>
-  <!-- text & features -->
-   <div class="relative z-40 w-full max-w-[1150px] mx-auto h-full xl:border-primary/30 flex items-center before:content-[''] before:absolute before:left-[270px] before:top-0 before:h-full xl:before:border-l before:border-primary/30 before:z-1">
-    <div class="flex mx-auto xl:mx-0 text-center xl:text-left">
-      <div class="w-full max-w-[600px] xl:max-w-[720px] px-4 xl:px-0">
-        <h1 class="hero__title h1 mb-8">Mordern Interior Design Service</h1>
-        <p class="hero__subtitle max-w-[480px] mx-auto xl:mx-0 mb-12">
-          Interior firm is an
-          award-winning, full-service interior design firm
-          with offices in New York City and Los Angeles. We
-          create beautiful, timeless spaces that are a true
-          reflection of our clients.</p>
-        </p>
-        <!-- featured img and cta btn -->
-        <div class="flex xl:absolute justify-center xl:items-start gap-16">
-          <!-- featured img -->
-           <div class="hero__featuredImg hidden xl:flex w-[270px] h-[478px] bg-gray-200 rounded-full">
-            <img src="/img/hero/img1.png" alt="featured img" />
-           </div>
-           <!--cta btn-->
-           <div>
-            <button class="btn btn-lg btn-accent-2 flex items-center gap-3 !px-6">
-              <span>Explore Now</span>
-              <i class="ri-arrow-right-long-line"></i>
-            </button>
-           </div>
+      <!-- hero -->
+      <section
+        class="hero relative py-24 xl:py-0 xl:h-[800px] flex items-center"
+      >
+        <div
+          class="bg-accent-1 w-full xl:w-3/4 h-full absolute top-0 left-0 z-10 xl:rounded-tr-[500px]"
+        ></div>
+        <!-- text & features -->
+        <div
+          class="relative z-40 w-full max-w-[1150px] mx-auto h-full xl:border-primary/30 flex items-center before:content-[''] before:absolute before:left-[270px] before:top-0 before:h-full xl:before:border-l before:border-primary/30 before:z-1"
+        >
+          <div class="flex mx-auto xl:mx-0 text-center xl:text-left">
+            <div class="w-full max-w-[600px] xl:max-w-[720px] px-4 xl:px-0">
+              <h1 class="hero__title h1 mb-8">
+                Modern Interior Design Service
+              </h1>
+              <!-- hero text -->
+              <p class="hero__subtitle max-w-[480px] mx-auto xl:mx-0 mb-12">
+                Interior firm is an award-winning, full-service interior design
+                firm with offices in New York City and Los Angeles. We create
+                beautiful, timeless spaces that are a true reflection of our
+                clients.
+              </p>
+              <!-- featured img and cta btn -->
+              <div
+                class="flex xl:absolute justify-center xl:items-start gap-16"
+              >
+                <!-- featured img -->
+                <div
+                  class="hero__featuredImg hidden xl:flex w-[270px] h-[478px] bg-gray-200 rounded-full"
+                >
+                  <img src="/img/hero/img1.png" alt="featured img" />
+                </div>
+                <!--cta btn-->
+                <div>
+                  <button
+                    class="btn btn-lg btn-accent-2 flex items-center gap-3 !px-6"
+                  >
+                    <span>Explore Now</span>
+                    <i class="ri-arrow-right-long-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-   </div>
-   <!-- main img and border -->
-    <div class="hero__mainImg-border absolute z-20 right-0 hidden xl:flex">
-      <div class="hero__mainImg-border w-[780px] h-[600px] rounded-bl-[400px] relative z-20 overflow-hidden">
-        <img src="/img/hero/hero-img.jpg" alt="main hero img" />
-      </div>
-      <!-- border -->
-      <div class="border border-primary/30 w-[820px] h-[600px] absolute z-10 top-10 -left-10 rounded-bl-[400px]"></div>
-    </div>
-    <!-- border bottom -->
-     <div class="xl:border-b w-[1170px] border-primary/30 absolute right-0 bottom-0"></div>
- </section>
+        <!-- main img and border -->
+        <div class="hero__mainImg-border absolute z-20 right-0 hidden xl:flex">
+          <div
+            class="hero__mainImg-border w-[780px] h-[600px] rounded-bl-[400px] relative z-20 overflow-hidden"
+          >
+            <img src="/img/hero/hero-img.jpg" alt="main hero img" />
+          </div>
+          <!-- border -->
+          <div
+            class="border border-primary/30 w-[820px] h-[600px] absolute z-10 top-10 -left-10 rounded-bl-[400px]"
+          ></div>
+        </div>
+        <!-- border bottom -->
+        <div
+          class="xl:border-b w-[1170px] border-primary/30 absolute right-0 bottom-0"
+        ></div>
+      </section>
 
- <!--about-->
- <section>about</section>
+      <!--about-->
+      <section>about</section>
 
       <!-- temp div -->
       <div class="h-[3000px]"></div>
