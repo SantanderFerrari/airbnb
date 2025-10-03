@@ -59,6 +59,7 @@
     border: 0 solid;
   }
   html, :host {
+    scroll-behavior: smooth;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
@@ -67,6 +68,13 @@
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
   }
+  header {
+  position: sticky;   /* makes it stick to the top */
+  top: 0;             /* sticks at the very top */
+  z-index: 1000;      /* ensures it stays above all sections */
+  background-color: #ffffff; /* solid background so text is readable */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* subtle shadow */
+}
   hr {
     height: 0;
     color: inherit;
