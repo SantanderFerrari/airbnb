@@ -593,6 +593,7 @@
   }
   .bg-page {
     background-color: var(--color-page);
+    overflow-x: hidden;
   }
   .bg-pink-200 {
     background-color: var(--color-pink-200);
