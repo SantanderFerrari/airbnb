@@ -10,6 +10,12 @@ const toggleMenu = () => {
 navTrigger.addEventListener("click", toggleMenu);
 navClose.addEventListener("click", toggleMenu);
 
+document.querySelectorAll("#nav-mobile a").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.getElementById("nav-mobile").classList.add("translate-x-full");
+  });
+});
+
 //swiper
 const swiper = new Swiper(".mySwiper", {
   navigation: {
